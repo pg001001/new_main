@@ -267,6 +267,9 @@ echo "Installing dalfox"
 go install github.com/hahwul/dalfox/v2@latest
 sudo cp ~/go/bin/dalfox /usr/bin/
 
+go install github.com/KathanP19/Gxss@latest
+sudo cp ~/go/bin/Gxss /usr/bin/
+
 # sql
 pipx install git+https://github.com/r0oth3x49/ghauri.git
 pipx ensurepath
