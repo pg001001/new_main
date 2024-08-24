@@ -27,7 +27,7 @@ xss_fuzzing() {
 
     # tool
     cat "${input_file}" | Gxss -p khXSS -o  "${exploit_dir}/XSS_Ref.txt"
-    dalfox file XSS_Ref.txt -o "${exploit_dir}Vulnerable_XSS.txt"
+    dalfox file "${exploit_dir}/XSS_Ref.txt" -o "${exploit_dir}Vulnerable_XSS.txt"
 
     echo "Script execution completed. Check ${exploit_dir}/possible_xss.txt for possible XSS vulnerabilities."
 }
