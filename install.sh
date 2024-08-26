@@ -1,6 +1,5 @@
 #!/bin/bash
 
-#!/bin/bash
 mkdir /root/tool
 
 sudo apt-get update
