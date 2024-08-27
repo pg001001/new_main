@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#!/bin/bash
 mkdir /root/tool
 
 sudo apt-get update
@@ -250,7 +251,6 @@ else
   echo "Failed to create the configuration file at $SUBFINDER_CONFIG_PATH"
 fi
 
-
 # exploit installation
 
 # xss 
@@ -274,23 +274,23 @@ pipx install git+https://github.com/r0oth3x49/ghauri.git
 pipx ensurepath
 
 # directory transversal
-sudo apt-get install -y git perl libwww-perl
-sudo cpan -i LWP::UserAgent
-cd /root/tool
-git clone https://github.com/wireghoul/dotdotpwn.git
-cd dotdotpwn
-chmod +x dotdotpwn.pl
-sudo ln -s $(pwd)/dotdotpwn.pl /usr/local/bin/dotdotpwn
-export PERL5LIB=$(pwd)
+# sudo apt-get install -y git perl libwww-perl
+# sudo cpan -i LWP::UserAgent
+# cd /root/tool
+# git clone https://github.com/wireghoul/dotdotpwn.git
+# cd dotdotpwn
+# chmod +x dotdotpwn.pl
+# sudo ln -s $(pwd)/dotdotpwn.pl /usr/local/bin/dotdotpwn
+# export PERL5LIB=$(pwd)
 
 # lfi 
-cd /root/tool
-git clone https://github.com/mzfr/liffy.git
-cd liffy
-python3 -m venv liffy
-source liffy/bin/activate
-pip3 install -r requirements.txt
-deactivate
+# cd /root/tool
+# git clone https://github.com/mzfr/liffy.git
+# cd liffy
+# python3 -m venv liffy
+# source liffy/bin/activate
+# pip3 install -r requirements.txt
+# deactivate
 
 
 

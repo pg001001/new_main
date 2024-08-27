@@ -24,7 +24,7 @@ url_enumeration() {
 
     # Remove duplicate URLs
     echo "Removing duplicate URLs..."
-    sort -u "${base_dir}/allUrls_${domain}.txt" -o "${base_dir}/allurls.txt"
+    sort -u "${base_dir}/allUrls.txt" -o "${base_dir}/allurls.txt"
     echo "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
 
     echo "Getting live urls for ${domain}..."
