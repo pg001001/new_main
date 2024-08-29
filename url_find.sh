@@ -54,7 +54,7 @@ url_enumeration() {
     for test in "${tests[@]}"; do
         echo "Running gf for $test..."
         # Output the result to a file named after the test in the specified vuln subdirectory
-        cat "${base_dir}/liveallurls.txt" | gf $test > "${base_dir}/vuln/$test.txt"
+        cat "${base_dir}/allurls.txt" | gf $test > "${base_dir}/vuln/$test.txt"
     done
 
     # paramspider --domain "${domain}" --exclude woff,css,js,png,svg,php,jpg --output "${base_dir}/paramspider_${domain}.txt"

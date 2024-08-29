@@ -11,6 +11,8 @@ sudo apt-get install -y jq
 sudo apt-get install -y ruby-full
 sudo apt-get install -y libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-dev ruby-dev build-essential libgmp-dev zlib1g-dev
 sudo apt-get install -y xargs
+sudo apt install -y python3
+
 
 echo "installing bash_profile aliases from recon_profile"
 git clone https://github.com/nahamsec/recon_profile.git
